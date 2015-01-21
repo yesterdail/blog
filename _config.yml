@@ -2,5 +2,5 @@
 title: 我的博客
 author: Alvin
 email: alvin.wang.csh@gmail.com
-baseurl: ""
+baseurl: "/my-blog"
 encoding: utf-8
