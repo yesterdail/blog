@@ -1,0 +1,20 @@
+# Configuration
+
+# Site
+title: 我的博客
+author:
+  name: Alvin Wang
+  email: alvin.wang.csh@gmail.com
+baseurl: ""
+
+# Extensions  
+highlighter: pygments
+theme: 
+  name: twitter 
+comments:
+  provider: duoshuo
+  duoshuo:
+    short_name : alvin
+  disqus :
+    short_name : alvin
+  
