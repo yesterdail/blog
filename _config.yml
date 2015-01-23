@@ -5,7 +5,7 @@ title: 我的博客
 author:
   name: Alvin Wang
   email: alvin.wang.csh@gmail.com
-baseurl: ""
+baseurl: "blog"
 
 # Extensions  
 highlighter: pygments
