@@ -5,12 +5,14 @@ title: 我的博客
 author:
   name: Alvin Wang
   email: alvin.wang.csh@gmail.com
+  
 baseurl: "http://yesterdail.github.io/blog"
 
 # Extensions  
 highlighter: pygments
 theme: 
   name: twitter 
+  
 comments:
   provider: duoshuo
   duoshuo:
