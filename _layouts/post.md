@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-{% include themes/twitter/post.html %}
+{% include themes/bootstrap-3/post.html %}

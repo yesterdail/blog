@@ -1,3 +1,3 @@
 ---
 ---
-{% include themes/twitter/default.html %}
+{% include themes/bootstrap-3/default.html %}

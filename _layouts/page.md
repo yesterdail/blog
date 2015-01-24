@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-{% include themes/twitter/page.html %}
+{% include themes/bootstrap-3/page.html %}
