@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-{% include themes/bootstrap-3/page.html %}
+{% include themes/the-minimum/page.html %}

@@ -1,3 +1,3 @@
 ---
 ---
-{% include themes/bootstrap-3/default.html %}
+{% include themes/the-minimum/default.html %}
