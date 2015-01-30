@@ -40,6 +40,11 @@ Bootstrap 框架的默认博客评论系统是 Disqus，然而 Disqus 在国内�
 
 **Windows下运行 Jekyll Serve 命令没有错误，但无法启动？**
 
+{% highlight bash %}
+Jekyll –v
+Gem uninstall Jekyll
+Gem install Jekyll –version “=2.1.1”
+{% endhighlight %}
 
 
 
