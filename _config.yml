@@ -1,0 +1,21 @@
+# Configuration
+
+# Site
+title: Blog
+
+author:
+  name: Alvin Wang
+  email: alvin.wang.csh@gmail.com
+  
+baseurl: ""
+
+# Extensions  
+highlighter: pygments
+  
+comments:
+  provider: duoshuo
+  duoshuo:
+    short_name : alvin
+  disqus :
+    short_name : alvin
+  

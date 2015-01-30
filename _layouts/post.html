@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article>
+  <header>
+    <h1 class="mod-post__title">{{ page.title }}</h1>
+  </header>
+  
+  <div class="mod-post__entry">
+    {{ content }}
+  </div>
+  
+  <div class="mod-post__meta">
+    <div>
+      <div>
+        <span>— 写于 {{ page.date | date: '%Y年%-m月%-d日' }}；</span>
+      </div>
+    </div>
+  </div>
+</article>
+
+<section class="mod-comment">
+  {% include JB/comments %}
+</section>
