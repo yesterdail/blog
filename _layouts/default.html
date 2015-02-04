@@ -21,11 +21,11 @@
 <div id="wrap">
   <header id="top"> 
     <!-- Home Link --> 
-    <a id="logo" href="{{ stie.baseurl }}/" title="回到首页"> <img src="{{ site.baseurl }}/assets/img/logo.png" alt="{{ site.title }}"> </a> 
+    <a id="logo" href="{{ site.baseurl }}/" title="回到首页"> <img src="{{ site.baseurl }}/assets/img/logo.png" alt="{{ site.title }}"> </a> 
     <!-- Navigation Bar -->
     <nav id="navbar">
       <ul>
-        {% capture home_url %}{{ site.baseurl }}/index.html{% endcapture %}
+        {% capture home_url %}{{ site.baseurl }}/{% endcapture %}
         {% capture categories_url %}{{ site.baseurl }}/categories.html{% endcapture %}
         {% capture about_url %}{{ site.baseurl }}/about.html{% endcapture %}
         <li{% if page.url == home_url %} class="active"{% endif %}> <a href="{{ home_url }}/">首页</a> </li>
