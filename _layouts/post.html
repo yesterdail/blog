@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section id="content">
+  <article class="post">
+
+    <header>
+      <h1>{{ page.title }}{% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+    </header>
+
+    <section>
+      <div class="post-extra">
+        <div class="pull-left">
+          <span>{{ page.date | date: '%Y年%-m月%-d日' }}</span>
+        </div>
+      </div>
+      {{ content }}
+    </section>
+
+  </article>
+</section>
+
+<section>
+  <div class="pagination">
+    <ul>
+      {% if page.previous %}
+      <li class="prev"><a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
+      {% else %}
+      <li class="prev disabled"><a>&larr; 上一篇</a></li>
+      {% endif %}
+      <li><a href="{{ site.baseurl }}/">文章列表</a></li>
+      {% if page.next %}
+      <li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+      {% else %}
+      <li class="next disabled"><a>下一篇 &rarr;</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</section>
+
+<section id="comments">
+  {% include JB/comments %}
+</section>

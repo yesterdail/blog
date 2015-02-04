@@ -1,0 +1,49 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="zh-CN" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-CN" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>{{ site.title }}</title>
+<meta name="keywords" content="{{ page.keywords | join: "," }}">
+<meta name="description" content="{{ page.description }}">
+<meta name="author" content="{{ site.author.name }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link href="{{ site.baseurl }}/assets/css/style.min.css" rel="stylesheet" type="text/css">
+<link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrap">
+  <header id="top"> 
+    <!-- Home Link --> 
+    <a id="logo" href="{{ stie.baseurl }}/" title="回到首页"> <img src="{{ site.baseurl }}/assets/img/logo.png" alt="{{ site.title }}"> </a> 
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <ul>
+        {% capture home_url %}{{ site.baseurl }}/index.html{% endcapture %}
+        {% capture categories_url %}{{ site.baseurl }}/categories.html{% endcapture %}
+        {% capture about_url %}{{ site.baseurl }}/about.html{% endcapture %}
+        <li{% if page.url == home_url %} class="active"{% endif %}> <a href="{{ home_url }}/">首页</a> </li>
+        <li{% if page.url == categories_url %} class="active"{% endif %}> <a href="{{ categories_url }}">分类</a> </li>
+        <li{% if page.url == about_url %} class="active"{% endif %}> <a href="{{ about_url }}">关于我</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main"> 
+    <!-- Main Content -->
+    <div id="main-inner">
+      <div id="main-content"> {{ content }} </div>
+    </div>
+  </section>
+  <footer id="bottom">
+    <p align="center">&copy; Copyright 2008 - {{ site.time | date: '%Y' }} by {{ site.author.name }}.</p>
+  </footer>
+</div>
+<script src="{{ site.baseurl }}/assets/js/jquery-1.10.1.min.js"></script>
+</body>
+</html>
