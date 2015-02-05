@@ -5,7 +5,7 @@ tagline: "博客部署"
 category : Lessons
 ---
 
-最近工作比较空闲，便想着搭建个人博客。现在，你看到的这个网站就是我的成果啦。网站是使用 Jekyll 生成，Bootstrap 主题风格，使用 Markdown 撰写博客，并托管于 Github Pages。
+闲暇之余，便想着搭建个人博客。现在，你看到的这个网站就是我的成果啦。网站是使用 Jekyll 生成，Bootstrap 主题风格，使用 Markdown 撰写博客，并托管于 Github Pages。
 
 林林总总的查阅了很多资料，将其整理在下面。
 
