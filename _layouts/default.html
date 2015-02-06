@@ -31,6 +31,10 @@
         <li{% if page.url == home_url %} class="active"{% endif %}> <a href="{{ site.baseurl }}/">首页</a> </li>
         <li{% if page.url == categories_url %} class="active"{% endif %}> <a href="{{ categories_url }}">分类</a> </li>
         <li{% if page.url == about_url %} class="active"{% endif %}> <a href="{{ about_url }}">关于</a> </li>
+		<li>{{ page.url }}</li>
+		<li>{{ home_url }}</li>
+		<li>{{ categories_url }}</li>
+		<li>{{ about_url }}</li>
         {% assign home_url = nil %}
         {% assign categories_url = nil %}
         {% assign about_url = nil %}
