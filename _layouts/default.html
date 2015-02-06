@@ -25,19 +25,9 @@
     <!-- Navigation Bar -->
     <nav id="navbar">
       <ul>
-        {% capture home_url %}{{ site.baseurl }}/index.html{% endcapture %}
-        {% capture categories_url %}{{ site.baseurl }}/categories.html{% endcapture %}
-        {% capture about_url %}{{ site.baseurl }}/about.html{% endcapture %}
-        <li{% if page.url == home_url %} class="active"{% endif %}> <a href="{{ site.baseurl }}/">首页</a> </li>
-        <li{% if page.url == categories_url %} class="active"{% endif %}> <a href="{{ categories_url }}">分类</a> </li>
-        <li{% if page.url == about_url %} class="active"{% endif %}> <a href="{{ about_url }}">关于</a> </li>
-		<li>{{ page.url }}</li>
-		<li>{{ home_url }}</li>
-		<li>{{ categories_url }}</li>
-		<li>{{ about_url }}</li>
-        {% assign home_url = nil %}
-        {% assign categories_url = nil %}
-        {% assign about_url = nil %}
+        <li{% if page.url == "/index.html" %} class="active"{% endif %}> <a href="{{ site.baseurl }}/">首页</a> </li>
+        <li{% if page.url == "/categories.html" %} class="active"{% endif %}> <a href="{{ site.baseurl }}/categories.html">分类</a> </li>
+        <li{% if page.url == "/about.html" %} class="active"{% endif %}> <a href="{{ site.baseurl }}/about.html">关于</a> </li>
       </ul>
     </nav>
   </header>
