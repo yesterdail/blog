@@ -2,7 +2,7 @@
 layout: post
 title: "起源"
 tagline: "博客部署"
-category : Lessons
+category : tech
 ---
 
 闲暇之余，便想着搭建个人博客。现在，你看到的这个网站就是我的成果啦。网站是使用 Jekyll 生成，Bootstrap 主题风格，使用 Markdown 撰写博客，并托管于 Github Pages。

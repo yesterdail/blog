@@ -21,6 +21,14 @@ layout: default
 </section>
 
 <section>
+  {% unless page.categories == empty %}
+  <ul class="tag-box inline">
+    <li><i class="icon-large icon-folder-open"></i></li>
+    {% assign categories_list = page.categories %}
+    {% include JB/categories_list %}
+  </ul>
+  {% endunless %}
+  
   <div class="pagination">
     <ul>
       {% if page.previous %}
